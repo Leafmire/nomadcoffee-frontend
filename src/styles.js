@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import reset from "styled-reset";
 
 export const lightTheme = {
 	fontColor: "#2c2c2c",
@@ -12,8 +11,18 @@ export const darkTheme = {
 };
 
 export const GlobalStyles = createGlobalStyle`
-	${reset}
+	html {
+		height: 100%;
+	}
 	body {
-		background-color: ${(props) => props.theme.bgColor};
+		height: 100%;
+	}
+	
+	#root {
+		height: 100%;
+	}
+
+	.shadow-bold {
+		box-shadow: 2px 2px 0px 2px rgb(0 0 0 / 0.1), 2px 2px 0px 2px rgb(0 0 0 / 0.1);
 	}
 `;

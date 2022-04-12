@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+	font-family: "nomad_logoFont";
+	src: url("./fonts/2Massj1808Heavy-5d3B.otf");
+}
